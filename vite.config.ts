@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "https://github.com/AngelSantana94/Sudoku-React-TypeScrip.git",
+  base: "/Sudoku-React-TypeScrip",
   // @ts-ignore
   test: {
     globals: true,
