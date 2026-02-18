@@ -52,7 +52,8 @@ function App() {
 
           <button
             onClick={startGame}
-            className="w-65 h-20 bg-[url('./img/button.jpeg')] bg-cover bg-center rounded-4xl 
+            style={{ backgroundImage: "url('./img/button.jpeg')" }}
+            className="w-65 h-20 bg-cover bg-center rounded-4xl 
               shadow-[8px_8px_15px_-3px_rgba(0,0,0,0.9)] font-bold text-5xl 
               text-[#E6DED1] text-shadow-[4px_4px_2px_rgba(0,0,0,0.5)] 
               active:scale-95 transition-transform flex items-center justify-center cursor-pointer"
@@ -65,7 +66,8 @@ function App() {
       {gameStarted && (
         <div className="flex flex-col items-center animate-fade-in px-4">
           <div
-            className="w-45 h-13 bg-[url('img/button.jpeg')] bg-cover bg-center rounded-4xl 
+          style={{ backgroundImage: "url('./img/button.jpeg')" }}
+            className="w-45 h-13  bg-cover bg-center rounded-4xl 
                           shadow-[8px_8px_15px_-3px_rgba(0,0,0,0.9)] font-bold text-4xl 
                           text-[#E6DED1] flex items-center justify-center mb-8"
           >
@@ -142,7 +144,8 @@ function App() {
           <div className="flex flex-wrap justify-center gap-5">
             <button
               onClick={resolverSudokuCompleto}
-              className="w-40 h-14 bg-[url('./img/button.jpeg')] bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
+              style={{ backgroundImage: "url('./img/button.jpeg')" }}
+              className="w-40 h-14  bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
             >
               Resolver
             </button>
@@ -151,7 +154,8 @@ function App() {
                 playButtonSound();
                 generarNuevoJuego();
               }}
-              className="w-40 h-14 bg-[url('./img/button.jpeg')] bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
+              style={{ backgroundImage: "url('./img/button.jpeg')" }}
+              className="w-40 h-14 bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
             >
               Reiniciar
             </button>
@@ -161,7 +165,8 @@ function App() {
                 setGameStarted(false);
                 setIsActive(false);
               }}
-              className="w-40 h-14 bg-[url('./img/button.jpeg')] bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
+              style={{ backgroundImage: "url('./img/button.jpeg')" }}
+              className="w-40 h-14 bg-cover bg-center rounded-3xl shadow-lg font-bold text-2xl text-[#E6DED1] active:scale-95 transition-transform cursor-pointer"
             >
               Salir
             </button>
